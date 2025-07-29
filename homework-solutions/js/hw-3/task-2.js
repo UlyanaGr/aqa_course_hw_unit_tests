@@ -4,3 +4,8 @@
 n + nn + nnn, где n не перемножаются, а конкатенируются
 
 */
+
+const n = 4;
+const n1 = n + "" + n;
+const n2 = n1 + n;
+const sum = n + parseInt(n1) + parseInt(n2);
