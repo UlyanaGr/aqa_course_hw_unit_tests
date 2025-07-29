@@ -4,10 +4,8 @@
 n + nn + nnn, где n не перемножаются, а конкатенируются
 
 */
-let n;
-n=4;
-let n1 = n + "" + n;
-let n2 = n1 + n;
-let sum = n + parseInt(n1) + parseInt(n2);
 
-console.log(sum);
+const n = 4;
+const n1 = n + "" + n;
+const n2 = n1 + n;
+const sum = n + parseInt(n1) + parseInt(n2);
