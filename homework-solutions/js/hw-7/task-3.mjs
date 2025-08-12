@@ -9,7 +9,24 @@
 */
 
 function digitalRoot(number) {
-  // Ваш код
+  let parts = number.toString().split('');
+
+  if (parts.length === 1) {
+    return Number(parts[0]); //выводим однозначное число, которое пришло в инпут
+  }
+  let result = 0;
+
+  for (let i = 0; i < parts.length; i++) {
+    result = result + Number(parts[i]);
+  }
+  if (result > 9) {
+    return digitalRoot(result);
+  } else {
+    return result;
+  }
 }
+
+digitalRoot(18);
+
 
 export { digitalRoot };
