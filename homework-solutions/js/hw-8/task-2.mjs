@@ -18,14 +18,11 @@ const words = [
   'queue',
 ];
 
-// function countVowels(word) {
-//   const matches = word.match(/[aeiou]/gi);
-//   return matches ? matches.length : 0;
-// }
 
 function countVowelsV2(word) {
   const vowels = ['a', 'e', 'i', 'o', 'u'];
-  const vowelsCount = [...word].reduce((sum, letter) => {
+  const lowerWord = word.toLowerCase();
+  const vowelsCount = [...lowerWord].reduce((sum, letter) => {
     if (vowels.includes(letter)) {
       return sum + 1;
     } else {
@@ -39,7 +36,9 @@ function sortedByVowels(wordsArr) {
   return wordsArr.toSorted((a, b) => countVowelsV2(a) - countVowelsV2(b));
 }
 
+export { sortedByVowels };
+
 // console.log(`not sorted === > ${words}`);
 // console.log(`sorted === > ${sortedByVowels(words)}`);
 
-export { sortedByVowels };
+
