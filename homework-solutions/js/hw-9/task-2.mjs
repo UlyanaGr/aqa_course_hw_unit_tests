@@ -89,14 +89,10 @@ try {
 
 
 function removeCharacter(name) {
-  const foundCharacter = characters.find(element => element.name === name); // с помощью find  ищем персонажа по имени
-
-  if (!foundCharacter) {
+  const index = characters.findIndex(element => element.name === name); 
+  if (index < 0 ) {
     throw new Error(`Character with name "${name}" not found`); // Если не нашли, показываем ошибку
   }
-
-  const index = characters.findIndex(element => element.name === name); 
-
   characters.splice(index, 1); // Удаляем найденный элемент из массива
 
   return characters; // Возвращаем обновлённый массив
