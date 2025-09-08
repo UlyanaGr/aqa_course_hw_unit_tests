@@ -8,11 +8,7 @@
 */
 
 function countOccurrences(arr = []) {
-  // const obj = arr.reduce((acc, item, index) => {
-  //   acc[index] = item;
-  //   return acc;
-  // }, {});
-  // console.log(obj);
+
 
   const result = {};
 
