@@ -13,7 +13,7 @@ const car = {
   model: 'Nissan',
 };
 
-function getKeyByValue<T extends object, V>(object: T, value: V): keyof T | undefined {
+function getKeyByValue<T extends object>(object: T, value: T[keyof T]): keyof T | undefined {
   for (const key in object) {
     if (object[key] === value) {
       return key;
