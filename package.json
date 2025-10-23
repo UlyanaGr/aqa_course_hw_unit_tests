@@ -41,7 +41,9 @@
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.25.9",
     "@babel/preset-env": "^7.26.0",
+    "@playwright/test": "^1.56.0",
     "@types/jest": "^29.5.14",
+    "@types/node": "^24.7.2",
     "husky": "^9.1.6",
     "prettier": "3.3.3",
     "ts-jest": "^29.2.5",
